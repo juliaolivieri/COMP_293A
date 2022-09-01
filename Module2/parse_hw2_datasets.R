@@ -8,56 +8,56 @@ for (n in names){
   load(file=paste0('/Users/jolivie1/Desktop/COMP_293A/igraphdata/data/',n,'.rda'))
 }
 
-name = "Koenigsberg"
+n = "Koenigsberg"
 filename = paste0("~/Desktop/COMP_293A/Module2/",n,".txt")
 write_graph(Koenigsberg,filename,format="edgelist")
 f <- readLines(filename,-1)
 f[1] <- "v1 v2"
 writeLines(f,filename)
 
-name = "USairports"
+n = "USairports"
 filename = paste0("~/Desktop/COMP_293A/Module2/",n,".txt")
 write_graph(USairports,filename,format="edgelist")
 f <- readLines(filename,-1)
 f[1] <- "v1 v2"
 writeLines(f,filename)
 
-name = "foodwebs"
-filename = paste0("~/Desktop/COMP_293A/Module2/",n,".txt")
-write_graph(foodwebs,filename,format="edgelist")
-f <- readLines(filename,-1)
-f[1] <- "v1 v2"
-writeLines(f,filename)
+# name = "foodwebs"
+# filename = paste0("~/Desktop/COMP_293A/Module2/",n,".txt")
+# write_graph(foodwebs,filename,format="edgelist")
+# f <- readLines(filename,-1)
+# f[1] <- "v1 v2"
+# writeLines(f,filename)
 
-name = "karate"
+n = "karate"
 filename = paste0("~/Desktop/COMP_293A/Module2/",n,".txt")
 write_graph(karate,filename,format="edgelist")
 f <- readLines(filename,-1)
 f[1] <- "v1 v2"
 writeLines(f,filename)
 
-name = "macaque"
+n = "macaque"
 filename = paste0("~/Desktop/COMP_293A/Module2/",n,".txt")
 write_graph(macaque,filename,format="edgelist")
 f <- readLines(filename,-1)
 f[1] <- "v1 v2"
 writeLines(f,filename)
 
-name = "yeast"
+n = "yeast"
 filename = paste0("~/Desktop/COMP_293A/Module2/",n,".txt")
 write_graph(yeast,filename,format="edgelist")
 f <- readLines(filename,-1)
 f[1] <- "v1 v2"
 writeLines(f,filename)
 
-name = "UKfaculty"
+n = "UKfaculty"
 filename = paste0("~/Desktop/COMP_293A/Module2/",n,".txt")
 write_graph(UKfaculty,filename,format="edgelist")
 f <- readLines(filename,-1)
 f[1] <- "v1 v2"
 writeLines(f,filename)
 
-name = "enron"
+n = "enron"
 filename = paste0("~/Desktop/COMP_293A/Module2/",n,".txt")
 write_graph(enron,filename,format="edgelist")
 f <- readLines(filename,-1)
@@ -65,21 +65,21 @@ f[1] <- "v1 v2"
 writeLines(f,filename)
 
 
-name = "immuno"
+n = "immuno"
 filename = paste0("~/Desktop/COMP_293A/Module2/",n,".txt")
 write_graph(immuno,filename,format="edgelist")
 f <- readLines(filename,-1)
 f[1] <- "v1 v2"
 writeLines(f,filename)
 
-name = "kite"
+n = "kite"
 filename = paste0("~/Desktop/COMP_293A/Module2/",n,".txt")
 write_graph(kite,filename,format="edgelist")
 f <- readLines(filename,-1)
 f[1] <- "v1 v2"
 writeLines(f,filename)
 
-name = "rfid"
+n = "rfid"
 filename = paste0("~/Desktop/COMP_293A/Module2/",n,".txt")
 write_graph(rfid,filename,format="edgelist")
 f <- readLines(filename,-1)
